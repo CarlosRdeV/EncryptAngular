@@ -1,0 +1,24 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar color="primary">
+      <span class="noBorder">Sidenav content</span>
+    </mat-toolbar>
+    <mat-action-list>
+      <button mat-list-item (click)="save()"> Save </button>
+      <button mat-list-item (click)="undo()"> Undo </button>
+    </mat-action-list>
+  </mat-sidenav>
+  <mat-sidenav-content><mat-toolbar color="primary">
+    <span>Main App</span>
+  </mat-toolbar>
+  <h3>Stroked Buttons</h3>
+  <div class="example-button-row">
+    <button mat-stroked-button>Basic</button>
+    <button mat-stroked-button color="primary">Primary</button>
+    <button mat-stroked-button color="accent">Accent</button>
+    <button mat-stroked-button color="warn">Warn</button>
+    <button mat-stroked-button disabled>Disabled</button>
+    <a mat-stroked-button routerLink=".">Link</a>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
